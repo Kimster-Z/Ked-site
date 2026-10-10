@@ -1,0 +1,80 @@
+﻿[p] 1. Legal Notices
+[p] Legal Notices
+[p] This website https://ked.lu (hereinafter the “Site”) is published by:
+[li] Publisher: Kimster Company S.a.r.l.-S (trade name: KED), whose registered office is located at 14 rue de la chapelle, L-8017 Strassen, Luxembourg.
+[li] VAT Number: 2026 2432 263
+[li] RCS Number: B308245
+[li] Publication Director: Kimster Company S.a.r.l.-S
+[li] Contact: contact@ked.lu
+[p] Hosting
+[p] The Site is hosted by Wix Online Platforms Limited, whose registered office is located at 1 Grant’s Row, Dublin 2, D02HX96, Ireland.
+[p] Intellectual Property
+[p] All elements of the Site (texts, images, logos, KED trademark, etc.) are protected by copyright and intellectual property law. Any reproduction, representation, or modification without prior written authorisation is prohibited and may result in legal proceedings.
+[p] Limitation of Liability
+[p] Kimster Company S.a.r.l.-S endeavours to provide accurate and up-to-date information on the Site, but cannot be held responsible for errors, omissions, or inaccuracies. The points of sale indicated on the Google Maps are provided for information purposes only and may change without notice.
+[p] Applicable Law
+[p] The Site is governed by Luxembourg law. Any dispute shall be submitted to the exclusive jurisdiction of the courts of Luxembourg.
+[h3] 2. Terms and Conditions of Use (CGU / Terms of Use)
+[p] Article 1: Purpose These Terms and Conditions of Use (TCU) define the terms of access to and use of the website ked.lu.
+[p] Article 2: Acceptance of the TCU Access to and use of the Site imply full and unconditional acceptance of these TCU. If you do not accept these conditions, please do not use the Site.
+[p] Article 3: Access to the Site The Site is freely accessible to any user with an internet connection. KED reserves the right to modify, suspend or interrupt access to the Site at any time without prior notice, for maintenance or any other reason.
+[p] Article 4: Use of the Site
+[li] The user undertakes to use the Site lawfully and not to interfere with its functionality.
+[li] The Google Maps feature is provided by Google and is subject to Google’s terms of use. KED is not responsible for data or malfunctions related to this third-party service.
+[li] Any commercial use of the Site’s information (e.g. bulk extraction of points of sale) is prohibited without prior written authorisation.
+[p] Article 5: Personal Data Personal data collected on the Site is processed in accordance with our Privacy Policy, accessible [link to the page].
+[p] Article 6: Intellectual Property All content on the Site (in particular the KED trademark) is the exclusive property of KED or its partners. Any reproduction is prohibited without authorisation.
+[p] Article 7: Limitation of Liability KED cannot be held liable for any direct or indirect damage resulting from the use of the Site, including inaccuracies on the points-of-sale map.
+[p] Article 8: Hypertext Links The Site may contain links to third-party websites. Kimster Company S.a.r.l.-S assumes no responsibility for their content.
+[p] Article 9: Modification of the TCU KED reserves the right to modify the TCU at any time. Modifications will be published on the Site and will apply immediately upon publication.
+[p] Article 10: Applicable Law and Jurisdiction These TCU are governed by Luxembourg law. Any dispute shall be submitted to the competent courts of Luxembourg.
+[h3] 3. Privacy Policy
+[p] Kimster Company S.a.r.l.-S (trade name: KED), independent entrepreneur in Luxembourg, is committed to protecting your personal data in accordance with Regulation (EU) 2016/679 (GDPR) and applicable Luxembourg legislation.
+[p] 3.1 Data Controller 
+
+The data controller is Kimster Company S.a.r.l.-S, address: 14 rue de la chapelle, L-8017 Strassen, Luxembourg, email: contact@ked.lu.
+[p] 3.2 Data Collected 
+
+On this informational Site, we collect very little personal data:
+[li] Navigation data: IP address (anonymised where possible), browser type, pages visited (via essential and third-party cookies).
+[li] Third-party cookies via Google Maps: When displaying and using the map, Google may collect data (approximate location, interactions). See Google’s privacy policy: https://policies.google.com/privacy.
+[p] No contact form is present. No data is actively collected from you. We do not use Google Analytics or other advanced tracking tools.
+[p] 3.3 Purposes of Processing
+[li] Ensure the functioning of the Site and the display of the interactive map.
+[li] Legal basis: Legitimate interest (service operation) and consent for non-essential cookies.
+[p] 3.4 Recipients of the Data 
+
+Your data may be shared with:
+[li] Technical service providers (Site host, Google for Maps).
+[li] Competent authorities in case of legal obligation.
+[p] No transfer outside the EU takes place without adequate safeguards.
+[p] 3.5 Cookies 
+
+The Site uses cookies:
+[li] Essential cookies: For basic Site operation.
+[li] Third-party cookies: Google Maps may place cookies (e.g. NID, _gid) for geolocation and map display.
+[p] You can manage/refuse non-essential cookies via a consent banner (to be implemented on the Site) or through your browser settings. Refusing may prevent proper map display.
+[p] 3.6 Data Retention Period 
+
+Navigation data / cookies: Maximum 12 months (or less depending on the cookie).
+[p] 3.7 Your Rights 
+
+You have the right of access, rectification, erasure, objection, portability and restriction. To exercise them, contact contact@ked.lu. You may also lodge a complaint with the National Commission for Data Protection (CNPD) in Luxembourg: www.cnpd.public.lu.
+[p] 3.8 Security 
+
+Technical measures (HTTPS, etc.) are implemented to protect your data.
+[p] 3.9 Changes 
+
+This policy may be updated. Please check it regularly.
+[h3] 4. Cookie Policy
+[p] KED uses cookies on the ked.lu Site to ensure its proper functioning. A cookie is a small text file stored on your device.
+[p] Types of Cookies Used:
+[li] Essential Cookies: Strictly necessary for operation (e.g. basic navigation). No consent required.
+[li] Third-Party Cookies (Google Maps): To display and interact with the points-of-sale map. Google may place analytical/preference cookies (e.g. NID, SID, _ga if enabled). See Google’s policy.
+[p] Cookie Management: A consent banner allows you to accept or refuse non-essential cookies on your first visit. You can also configure your browser to block cookies (this may prevent proper map display).
+[p] Duration:
+[li] Session cookies: Until browser closure.
+[li] Persistent cookies: Up to 24 months maximum.
+[p] For any questions: contact@ked.lu.
+[p] Last updated: February 16, 2026.
+[p] Legal information

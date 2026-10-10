@@ -1,0 +1,82 @@
+﻿[p] 1. Mentions Légales
+[p] ​
+[p] Mentions Légales
+[p] Le présent site web https://ked.lu (ci-après le « Site ») est édité par :
+[li] Éditeur : Kimster Company S.a.r.l.-S (nom commercial : KED), dont le siège social est situé à 14 rue de la chapelle, L-8017 Strassen, Luxembourg.
+[li] Numéro TVA : 2026 2432 263
+[li] Numéro RCS : B308245
+[li] Responsable de la publication : Kimster Company S.a.r.l.-S.
+[li] Contact : contact@ked.lu
+[p] Hébergement
+[p] Le Site est hébergé par Wix Online Platforms Limited, dont le siège social est situé à 1 Grant’s Row, Dublin 2, D02HX96, Irlande.
+[p] Propriété intellectuelle
+[p] Tous les éléments du Site (textes, images, logos, marque KED, etc.) sont protégés par le droit d'auteur et la propriété intellectuelle. Toute reproduction, représentation ou modification sans autorisation préalable écrite est interdite et peut entraîner des poursuites.
+[p] Limitation de responsabilité
+[p] Kimster Company S.a.r.l.-S s'efforce de fournir des informations exactes et à jour sur le Site, mais ne saurait être tenu responsable des erreurs, omissions ou inexactitudes. Les points de vente indiqués sur la carte Google Maps sont fournis à titre indicatif et peuvent évoluer sans préavis.
+[p] Loi applicable
+[p] Le Site est régi par le droit luxembourgeois. Tout litige sera soumis à la compétence exclusive des tribunaux du Luxembourg.
+[p] 2. Conditions Générales d'Utilisation (CGU)
+[p] Article 1 : Objet
+[p] Les présentes Conditions Générales d’Utilisation (CGU) définissent les modalités d’accès et d’utilisation du site ked.lu.
+[p] Article 2 : Acceptation des CGU
+[p] L'accès et l'utilisation du Site impliquent l'acceptation sans réserve des présentes CGU. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser le Site.
+[p] Article 3 : Accès au Site
+[p] Le Site est accessible gratuitement à tout utilisateur disposant d'une connexion internet. KED se réserve le droit de modifier, suspendre ou interrompre l'accès au Site sans préavis, pour maintenance ou toute autre raison.
+[p] Article 4 : Utilisation du Site
+[li] L'utilisateur s'engage à utiliser le Site de manière licite et à ne pas porter atteinte à ses fonctionnalités.
+[li] La carte Google Maps est fournie par Google et soumise à ses conditions d'utilisation. KED n'est pas responsable des données ou dysfonctionnements liés à ce service tiers.
+[li] Toute utilisation commerciale des informations du Site (ex. : extraction massive des points de vente) est interdite sans autorisation écrite préalable.
+[p] Article 5 : Données Personnelles
+[p] Les données personnelles collectées sur le Site sont traitées conformément à notre Politique de Confidentialité.
+[p] Article 6 : Propriété Intellectuelle
+[p] Tous les contenus du Site (notamment la marque KED) sont la propriété exclusive de KED ou de ses partenaires. Toute reproduction est interdite sans autorisation.
+[p] Article 7 : Limitation de Responsabilité
+[p] KED ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation du Site, y compris les inexactitudes sur la carte des points de vente.
+[p] Article 8 : Liens Hypertextes
+[p] Le Site peut contenir des liens vers des sites tiers. Kimster Company S.a.r.l.-S n'assume aucune responsabilité quant à leur contenu.
+[p] Article 9 : Modification des CGU
+[p] KED se réserve le droit de modifier les CGU à tout moment. Les modifications seront publiées sur le Site et applicables dès leur mise en ligne.
+[p] Article 10 : Loi Applicable et Juridiction
+[p] Les CGU sont régies par le droit luxembourgeois. Tout litige sera soumis aux tribunaux compétents du Luxembourg.
+[p] 3. Politique de Confidentialité
+[p] Kimster Company S.a.r.l.-S (nom commercial : KED), société basée au Luxembourg, s'engage à protéger vos données personnelles conformément au Règlement (UE) 2016/679 (RGPD) et à la législation luxembourgeoise applicable.
+[p] 3.1 Responsable du Traitement
+[p] Le responsable du traitement est Kimster Company S.a.r.l.-S, adresse : 14 rue de la chapelle, L-8017 Strassen, Luxembourg., email : contact@ked.lu.
+[p] 3.2 Données Collectées
+[p] Sur ce Site informatif, nous collectons très peu de données personnelles :
+[li] Données de navigation : Adresse IP (anonymisée si possible), type de navigateur, pages visitées (via cookies essentiels et tiers).
+[li] Cookies tiers via Google Maps : Lors de l'affichage et de l'utilisation de la carte, Google peut collecter des données (localisation approximative, interactions). Voir la politique de Google : https://policies.google.com/privacy.
+[p] Aucun formulaire de contact n'est présent. Aucune donnée n'est collectée activement de votre part. Nous n'utilisons pas Google Analytics ni d'autres outils de tracking avancés.
+[p] 3.3 Finalités du Traitement
+[li] Assurer le fonctionnement du Site et l'affichage de la carte interactive.
+[li] Base légale : Intérêt légitime (fonctionnement du service) et consentement pour les cookies non essentiels.
+[p] 3.4 Destinataires des Données
+[p] Vos données peuvent être partagées avec :
+[li] Prestataires techniques (hébergeur du Site, Google pour Maps).
+[li] Autorités compétentes en cas d'obligation légale.
+[p] Aucun transfert hors UE n'est effectué sans garanties adéquates.
+[p] 3.5 Cookies
+[p] Le Site utilise des cookies :
+[li] Cookies essentiels : Pour le fonctionnement basique du Site.
+[li] Cookies tiers : Google Maps peut déposer des cookies (ex. : NID, _gid) pour la géolocalisation et l'affichage de la carte.
+[p] Vous pouvez gérer/refuser les cookies non essentiels via un bandeau de consentement (à implémenter sur votre site) ou via les paramètres de votre navigateur. Refuser peut empêcher l'affichage correct de la carte.
+[p] 3.6 Durée de Conservation
+[p] Données de navigation / cookies : Maximum 12 mois (ou moins selon le cookie).
+[p] 3.7 Vos Droits
+[p] Vous disposez des droits d'accès, rectification, effacement, opposition, portabilité et limitation. Pour les exercer, contactez contact@ked.lu. Vous pouvez également introduire une réclamation auprès de la Commission Nationale pour la Protection des Données (CNPD) au Luxembourg : www.cnpd.public.lu.
+[p] 3.8 Sécurité
+[p] Des mesures techniques (HTTPS, etc.) sont mises en œuvre pour protéger vos données.
+[p] 3.9 Modifications
+[p] Cette politique peut être mise à jour. Consultez-la régulièrement.
+[p] 4. Politique de Cookies
+[p] KED utilise des cookies sur le Site ked.lu pour assurer son bon fonctionnement. Un cookie est un petit fichier texte stocké sur votre appareil.
+[p] Types de Cookies Utilisés :
+[li] Cookies Essentiels : Strictement nécessaires au fonctionnement (ex. : navigation). Pas de consentement requis.
+[li] Cookies Tiers (Google Maps) : Pour afficher et interagir avec la carte des points de vente. Google peut déposer des cookies analytiques / de préférences (ex. : NID, SID, _ga si activé). Voir politique Google.
+[p] Gestion des Cookies :
+[p] Un bandeau de consentement vous permet d'accepter ou refuser les cookies non essentiels lors de votre première visite. Vous pouvez aussi paramétrer votre navigateur pour bloquer les cookies (mais cela peut empêcher l'affichage de la carte).
+[p] Durée :
+[p] Cookies de session : Jusqu'à fermeture du navigateur. Cookies persistants : Jusqu'à 24 mois maximum.
+[p] Pour toute question : contact@ked.lu.
+[p] Date de dernière mise à jour : 16 février 2026.
+[p] Informations légales

@@ -1,0 +1,110 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="hero-crown reveal">
+        <img src="{{root}}assets/img/made-in-luxembourg.png" alt="" width="420" height="336">
+        <span>{{hero_eyebrow}}</span>
+      </p>
+      <h1 id="hero-title" class="reveal">{{hero_h1}}</h1>
+      <p class="lead reveal">{{hero_lead}}</p>
+      <div class="hero-actions reveal">
+        <a class="btn btn--primary" href="#ou-trouver">{{hero_cta_map}}</a>
+        <a class="btn btn--ghost" href="#produit">{{hero_cta_more}}</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <img src="{{root}}assets/img/hero-canettes.jpg" alt="{{hero_alt}}" width="2000" height="1429" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="produit" aria-labelledby="produit-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{product_eyebrow}}</span>
+      <h2 id="produit-title">{{product_h2}}</h2>
+      <p class="lead">{{product_text}}</p>
+    </div>
+    <figure class="product-visual reveal">
+      <img src="{{root}}assets/img/double-canette.jpg" alt="{{products_alt}}" width="2000" height="1342" loading="lazy" decoding="async">
+    </figure>
+    <div class="product-lines">
+      <article class="product-line reveal">
+        <h3>{{original_name}}</h3>
+        <p>{{original_text}}</p>
+      </article>
+      <article class="product-line reveal">
+        <h3>{{zero_name}}</h3>
+        <p>{{zero_text}}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pourquoi" aria-labelledby="pourquoi-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{why_eyebrow}}</span>
+      <h2 id="pourquoi-title">{{why_h2}}</h2>
+    </div>
+    <ul class="why-grid">
+      <li class="why-item reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="9" r="3"/><path d="M8 36c-2-10 2-18 9-18 4 0 7 3 7 7 0-4 3-7 7-7 7 0 11 8 9 18M16 25c0-5 3-9 8-9s8 4 8 9M10 36h28"/></svg>
+        <h3>{{why1_title}}</h3>
+        <p>{{why1_text}}</p>
+      </li>
+      <li class="why-item reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7c-6 8-12 15-12 22a12 12 0 0 0 24 0c0-7-6-14-12-22z"/><path d="M9 9l30 30"/></svg>
+        <h3>{{why2_title}}</h3>
+        <p>{{why2_text}}</p>
+      </li>
+      <li class="why-item reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="28" r="13"/><path d="M24 15c0-4 2-7 6-8M24 15c-3-3-7-3-9-1"/><path d="M21 26a3 3 0 1 1 4 3c-1 .5-1 1.2-1 2.2M24 35v.5"/></svg>
+        <h3>{{why3_title}}</h3>
+        <p>{{why3_text}}</p>
+      </li>
+      <li class="why-item reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="9" y="12" width="12" height="28" rx="3"/><rect x="27" y="8" width="12" height="32" rx="3"/><path d="M11 16h8M29 12h8"/></svg>
+        <h3>{{why4_title}}</h3>
+        <p>{{why4_text}}</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="ou-trouver" aria-labelledby="map-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{map_eyebrow}}</span>
+      <h2 id="map-title">{{map_h2}}</h2>
+      <p class="lead">{{map_intro}}</p>
+    </div>
+    <div class="locator">
+      <div class="map" id="map"></div>
+      <div class="panel" id="locator-panel" aria-live="polite"></div>
+    </div>
+    <noscript><p class="notice">{{map_noscript}}</p></noscript>
+  </div>
+</section>
+
+<section class="section" id="evenements" aria-labelledby="events-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">{{events_eyebrow}}</span>
+      <h2 id="events-title">{{events_h2}}</h2>
+    </div>
+    <div class="events" id="events-list"></div>
+    <p class="events-empty" id="events-empty" hidden>{{events_empty}}</p>
+  </div>
+</section>
+
+<section class="partners" id="partenaires" aria-labelledby="partners-title">
+  <div class="wrap partners-head">
+    <h2 id="partners-title" class="eyebrow">{{partners_h2}}</h2>
+    <button class="pause" id="marquee-toggle" type="button" aria-pressed="false" aria-label="{{partners_pause}}">
+      <svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12"/><rect x="8.5" y="1" width="3.5" height="12"/></svg>
+      <svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1l10 6-10 6z"/></svg>
+    </button>
+  </div>
+  <div class="marquee" id="marquee"></div>
+</section>

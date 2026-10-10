@@ -1,0 +1,64 @@
+﻿[p] 1. Impressum / Rechtlech Informatiounen (Mentions Légales)
+[p] Rechtlech Informatiounen
+[p] Dës Websäit https://ked.lu (no “Site”) gëtt erausginn vum:
+[li] Erausgeber: Kimster Company S.a.r.l.-S, onofhängege Ënnerhueler (Handelsnumm: KED), mat Sëtz zu 14 rue de la chapelle, L-8017 Strassen, Lëtzebuerg.
+[li] TVA-Nummer:2026 2432 263
+[li] RCS-Nummer: B308245
+[li] Verantwortleche fir d’Publikatioun: A. Raulin.
+[li] Kontakt: contact@ked.lu
+[p] Hosting
+[p] De Site gëtt gehost vun der Wix Online Platforms Limited, mat Sëtz zu 1 Grant’s Row, Dublin 2, D02HX96, Irland.
+[p] Geeschtegegt Eegentum
+[p] All Elementer vum Site (Texter, Biller, Logoen, Mark KED, asw.) si geschützt duerch Urheberrecht a geeschtegt Eegentum. All Reproduktioun, Representatioun oder Ännerung ouni virgeschriwwe Autorisatioun ass verbueden a kann zu Verfollegungen féieren.
+[p] Haftungsausschloss
+[p] Kimster Company S.a.r.l.-S beméit sech, korrekt an aktuell Informatiounen op der Säit ze liwweren, kann awer net haftbar gemaach ginn fir Feeler, Ausloossungen oder Ungenauegkeeten. D’Verkafspunkten op der Google Maps Kaart gi just als Informatioun uginn a kënne sech ouni Virwarnung änneren.
+[p] Uwendbares Recht
+[p] De Site ënnerleet dem lëtzebuergesche Recht. All Streitfäll fällt ënner d’exklusiv Kompetenz vun de Lëtzebuerger Geriichter.
+[p] 2. Allgemeng Benotzungsbedéngungen (Conditions Générales d'Utilisation)
+[p] Artikel 1 : Zweck Dës Allgemeng Benotzungsbedéngungen (ABB) definéieren d’Modalitéiten vum Zougang an der Benotzung vum Site ked.lu.
+[p] Artikel 2 : Akzeptanz vun den ABB De Zougang an d’Benotzung vum Site implizéieren d’bedingungslos Akzeptanz vun dëse ABB. Wann Dir dës Konditiounen net akzeptéiert, benotzt w.e.g. net de Site.
+[p] Artikel 3 : Zougang zum Site De Site ass fräi zougänglech fir all Benotzer mat enger Internetverbindung. KED behält sech vir, de Site ouni Vorwarnung ze änneren, ze suspendéieren oder z’ënnerbriechen, fir Ënnerhalt oder aus engem anere Grond.
+[p] Artikel 4 : Benotzung vum Site
+[li] De Benotzer engagéiert sech, de Site gesetzlech ze benotzen an d’Funktiounen net ze stéieren.
+[li] D’Google Maps gëtt vun Google zur Verfügung gestallt a fällt ënner hir Benotzungsbedéngungen. KED ass net verantwortlech fir Daten oder Feeler, déi mat dësem Drëttperson-Service verbonne sinn.
+[li] All kommerziell Benotzung vun de Site-Informatiounen (z. B. massiv Extraktioun vun Verkafspunkten) ass ouni virgeschriwwe Autorisatioun verbueden.
+[p] Artikel 5 : Perséinlech Donnéeën D’perséinlech Donnéeën, déi op der Säit gesammelt ginn, gi behandelt no eiser Dateschutzpolitik, zougänglech op [Link zur Säit].
+[p] Artikel 6 : Geeschtegt Eegentum All Inhalter vum Site (insbesonnesch d’Mark KED) sinn exklusiv Eegentum vun KED oder senge Partner. All Reproduktioun ass ouni Autorisatioun verbueden.
+[p] Artikel 7 : Haftungsausschloss KED kann net haftbar gemaach ginn fir direkt oder indirekt Schued, deen aus der Benotzung vum Site resultéiert, och bei Ungenauegkeeten op der Kaart vun de Verkafspunkten.
+[p] Artikel 8 : Hypertext-Linken De Site kann Linken op Drëttsäite enthalen. Kimster Company S.a.r.l.-S iwwerhëlt keng Verantwortung fir hir Inhalter.
+[p] Artikel 9 : Ännerung vun den ABB KED behält sech vir, d’ABB jidderzäit z’änneren. D’Ännerungen ginn op der Säit publizéiert a sinn direkt gëltend.
+[p] Artikel 10 : Uwendbares Recht a Geriichtsbarkeet D’ABB ënnerleien dem lëtzebuergesche Recht. All Streitfäll fällt ënner d’kompetent Lëtzebuerger Geriichter.
+[p] 3. Dateschutzpolitik (Politique de Confidentialité)
+[p] Kimster Company S.a.r.l.-S (Handelsnumm: KED), onofhängege Ënnerhueler zu Lëtzebuerg, engagéiert sech, Är perséinlech Donnéeën ze schützen no der Verordnung (EU) 2016/679 (RGPD) an der lëtzebuergescher Gesetzgebung.
+[p] 3.1 Verantwortlechen fir d’Behandlung De Verantwortlechen ass Kimster Company S.a.r.l.-S, Adress: 14 rue de la chapelle, L-8017 Strassen, Lëtzebuerg, E-Mail: contact@ked.lu.
+[p] 3.2 Gesammelt Donnéeën Op dësem informativem Site gi ganz wéineg perséinlech Donnéeën gesammelt:
+[li] Navigatiounsdaten: IP-Adress (anonymiséiert wa méiglech), Browsertyp, besichte Säiten (iwwer essenziell a Drëtt-Cookies).
+[li] Drëtt-Cookies iwwer Google Maps: Bei der Affichage an der Benotzung vun der Kaart kann Google Donnéeën sammelen (approximativ Lokalisatioun, Interaktiounen). Kuckt d’Politik vun Google: https://policies.google.com/privacy.
+[p] Et gëtt kee Kontaktformular. Keng Donnéeë gi aktiv vun Iech gesammelt. Mir benotzen net Google Analytics oder aner fortgeschratt Tracking-Tools.
+[p] 3.3 Zweck vun der Behandlung
+[li] Fonctionnement vum Site an Affichage vun der interaktiver Kaart sécherstellen.
+[li] Rechtlech Basis: Legitimes Interesse (Fonctionnement vum Service) a Konsent fir net-essentiell Cookies.
+[p] 3.4 Empfänger vun de Donnéeën Är Donnéeën kënne gedeelt ginn mat:
+[li] Technesche Prestatairen (Host vum Site, Google fir Maps).
+[li] Kompetent Autoritéiten bei gesetzlecher Verpflichtung.
+[p] Keng Iwwerdroung ausserhalb vun der EU ouni adequat Garantien.
+[p] 3.5 Cookies De Site benotzt Cookies:
+[li] Essenziell Cookies: Fir d’Basis-Fonctionnement vum Site.
+[li] Drëtt-Cookies: Google Maps kann Cookies deposéieren (z. B. NID, _gid) fir Geolocation an Affichage vun der Kaart.
+[p] Dir kënnt net-essentiell Cookies iwwer e Konsent-Banner (ze implementéieren op der Säit) oder an Ärem Browser verwalten/refuséieren. Refus kann d’korrekt Affichage vun der Kaart behënneren.
+[p] 3.6 Konservatiounsdauer Navigatiounsdaten / Cookies: Maximal 12 Méint (oder manner je no Cookie).
+[p] 3.7 Är Rechter Dir hutt d’Rechter op Zougang, Korrektur, Läsche, Géigesproch, Portabilitéit a Limitatioun. Fir se auszeüben, kontaktéiert contact@ked.lu. Dir kënnt och eng Plainte bei der Commission Nationale pour la Protection des Données (CNPD) zu Lëtzebuerg abrengen: www.cnpd.public.lu.
+[p] 3.8 Sécherheet Technesch Mesuren (HTTPS, asw.) gi gesat fir Är Donnéeën ze schützen.
+[p] 3.9 Ännerungen Dës Politik kann aktualiséiert ginn. Kuckt se regelméisseg no.
+[p] 4. Cookie-Politik
+[p] KED benotzt Cookies op der Säit ked.lu fir säin gudde Fonctionnement. E Cookie ass e klenge Textdatei, deen op Ärem Apparat gespäichert gëtt.
+[p] Aarte vu benotzte Cookies:
+[li] Essenziell Cookies: Streng néideg fir d’Fonctionnement (z. B. Navigatioun). Kee Konsent erfuerderlech.
+[li] Drëtt-Cookies (Google Maps): Fir d’Kaart vun de Verkafspunkten ze weisen an ze interagéieren. Google kann analytesch / Preferenz-Cookies deposéieren (z. B. NID, SID, _ga wa aktivéiert). Kuckt d’Politik vun Google.
+[p] Gestioun vun de Cookies: E Konsent-Banner erlaabt Iech net-essentiell Cookies bei der éischter Visite ze akzeptéieren oder ze refuséieren. Dir kënnt och Äre Browser astellen, fir Cookies ze blockéieren (dat kann d’korrekt Affichage vun der Kaart behënneren).
+[p] Dauer:
+[li] Session-Cookies: Bis zum Zoumaachen vum Browser.
+[li] Persistente Cookies: Maximal 24 Méint.
+[p] Fir all Fro: contact@ked.lu.
+[p] Lescht Aktualiséierung: 16. Februar 2026.
+[p] Rechtslech Informatiounen

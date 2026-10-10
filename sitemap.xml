@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.ked.lu/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ked.lu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ked.lu/en/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.ked.lu/lb/"/>
+  </url>
+  <url><loc>https://www.ked.lu/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ked.lu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ked.lu/en/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.ked.lu/lb/"/>
+  </url>
+  <url><loc>https://www.ked.lu/lb/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ked.lu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ked.lu/en/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.ked.lu/lb/"/>
+  </url>
+  <url><loc>https://www.ked.lu/informations-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ked.lu/informations-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ked.lu/en/informations-legales/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.ked.lu/lb/informations-legales/"/>
+  </url>
+  <url><loc>https://www.ked.lu/en/informations-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ked.lu/informations-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ked.lu/en/informations-legales/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.ked.lu/lb/informations-legales/"/>
+  </url>
+  <url><loc>https://www.ked.lu/lb/informations-legales/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.ked.lu/informations-legales/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ked.lu/en/informations-legales/"/>
+    <xhtml:link rel="alternate" hreflang="lb" href="https://www.ked.lu/lb/informations-legales/"/>
+  </url>
+</urlset>
