@@ -381,6 +381,12 @@
       });
       points.forEach(function (p) {
         var inCanton = !state.canton || p._canton === state.canton;
+        /* un point n'est cliquable que dans le canton sélectionné : sur la carte
+           complète, un toucher sélectionne toujours le canton, jamais un point */
+        var clickable = !!state.canton && p._canton === state.canton;
+        p._g.style.pointerEvents = clickable ? '' : 'none';
+        p._g.setAttribute('tabindex', clickable ? '0' : '-1');
+        p._g.setAttribute('aria-hidden', clickable ? 'false' : 'true');
         p._g.classList.toggle('is-dim', !inCanton);
         p._g.classList.toggle('is-selected', state.point === p.id);
         p._label.style.display = state.point === p.id ? '' : 'none';
