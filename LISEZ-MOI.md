@@ -47,10 +47,6 @@ Ne modifiez pas directement les fichiers `index.html` : ils seraient écrasés �
 Les photos principales existent en deux formats : JPEG (`hero-canettes.jpg`, `double-canette.jpg`) et WebP plus léger (`…-1000.webp`, `…-1600.webp`, `…-800.webp`, `…-1400.webp`), que les navigateurs récents utilisent en priorité. La carte utilise `carte-luxembourg.webp`.
 **Si vous remplacez une de ces photos, remplacez aussi ses versions WebP**, sinon l'ancienne image continuera de s'afficher. Le plus simple est de demander à Claude de régénérer ces fichiers.
 
-### Composition et valeurs nutritionnelles
-
-Elles sont dans `tools/i18n.json` (clés `orig_ingredients`, `zero_ingredients`, `nutri_rows`, dans chaque langue). Elles reprennent l'étiquette des canettes : à mettre à jour si l'étiquette change, puis relancer `tools/build.ps1`.
-
 ## Mise en ligne sur GitHub Pages
 
 1. Créez un compte sur github.com, puis un dépôt **public** (par exemple `ked-site`). GitHub Pages est gratuit pour les dépôts publics.
