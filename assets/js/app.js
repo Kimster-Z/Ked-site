@@ -404,32 +404,48 @@
       } catch (e) { /* file:// ou environnement restreint */ }
     }
 
+    /* mobile : faire défiler la page jusqu'à un élément, sous l'en-tête fixe.
+       window.scrollTo différé est fiable sur Safari iOS, contrairement à
+       scrollIntoView lancé pendant l'animation de zoom de la carte. */
+    function scrollToNode(node) {
+      if (!node || !window.matchMedia('(max-width: 900px)').matches) return;
+      setTimeout(function () {
+        var header = document.querySelector('.site-header');
+        var offset = (header ? header.offsetHeight : 0) + 12;
+        var y = node.getBoundingClientRect().top + (window.pageYOffset || document.documentElement.scrollTop) - offset;
+        try { window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' }); }
+        catch (e) { window.scrollTo(0, y); }
+      }, 80);
+    }
+
     function selectCanton(id, noFocus) {
       state.canton = id; state.point = null;
       animateTo(viewFor(byCanton[id]));
-      applyMapState(); render(!noFocus); url();
+      applyMapState(); render(!noFocus, noFocus ? null : panel); url();
     }
     function selectPoint(pid, noFocus) {
       var p = byId[pid]; if (!p) return;
       if (state.canton !== p._canton) { state.canton = p._canton; animateTo(viewFor(byCanton[p._canton])); }
       state.point = pid;
-      applyMapState(); render(!noFocus); url();
+      applyMapState(); render(!noFocus, noFocus ? null : panel); url();
     }
     function backToCanton() {
-      state.point = null; applyMapState(); render(true); url();
+      state.point = null; applyMapState(); render(true, panel); url();
     }
-    function reset() {
+    /* retour à la carte complète : l'écran reste sur la carte (geste, Échap,
+       clic dans le vide) ou y remonte (bouton « Toute la carte » sous la carte) */
+    function reset(scrollTarget, keepFocus) {
       state.canton = null; state.point = null;
       animateTo(HOME.slice());
-      applyMapState(); render(true); url();
+      applyMapState(); render(!keepFocus, scrollTarget || null); url();
     }
 
     document.addEventListener('keydown', function (e) {
       if (e.key !== 'Escape') return;
-      if (state.point) backToCanton(); else if (state.canton) reset();
+      if (state.point) backToCanton(); else if (state.canton) reset(null);
     });
     svg.addEventListener('click', function (e) {
-      if (e.target === svg || e.target === img) { if (state.canton) reset(); }
+      if (e.target === svg || e.target === img) { if (state.canton) reset(null, true); }
     });
 
     /* mobile : pincer (rapprocher deux doigts) sur un canton zoomé ramène à la carte complète */
@@ -443,7 +459,7 @@
     }, { passive: true });
     mapEl.addEventListener('touchmove', function (e) {
       if (!pinch0 || e.touches.length !== 2 || !state.canton) return;
-      if (touchDist(e.touches) / pinch0 < 0.8) { pinch0 = 0; hideTip(); reset(); }
+      if (touchDist(e.touches) / pinch0 < 0.8) { pinch0 = 0; hideTip(); reset(null, true); }
     }, { passive: true });
     mapEl.addEventListener('touchend', function (e) {
       if (e.touches.length < 2) pinch0 = 0;
@@ -516,7 +532,7 @@
     }
 
     var titleNode = null;
-    function render(moveFocus) {
+    function render(moveFocus, scrollTarget) {
       panel.textContent = '';
       var children = [];
 
@@ -564,7 +580,7 @@
       } else if (state.canton) {
         var cc = byCanton[state.canton];
         titleNode = el('h3', { class: 'panel-title', tabindex: '-1', text: cantonName(cc.id) });
-        children.push(backButton(J.back_map, reset));
+        children.push(backButton(J.back_map, function () { reset(mapEl); }));
         children.push(el('div', { class: 'panel-head' }, [
           titleNode,
           el('p', { class: 'panel-count', text: countText(cc.points.length) })
@@ -601,11 +617,9 @@
 
       children.forEach(function (c) { panel.appendChild(c); });
       if (moveFocus && titleNode) {
-        try { titleNode.focus({ preventScroll: true }); } catch (e) { titleNode.focus(); }
-        if (window.matchMedia('(max-width: 900px)').matches) {
-          panel.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
-        }
+        try { titleNode.focus({ preventScroll: true }); } catch (e) { /* ancien navigateur : pas de focus pour ne pas faire sauter l'écran */ }
       }
+      if (scrollTarget) scrollToNode(scrollTarget);
     }
 
     /* liste complète des points de vente sous la carte : consultable sans
@@ -620,7 +634,8 @@
             var show = el('button', { type: 'button', class: 'pa-link' }, [J.show_on_map]);
             show.addEventListener('click', function () {
               selectPoint(p.id, true);
-              mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+              if (window.matchMedia('(max-width: 900px)').matches) scrollToNode(mapEl);
+              else mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
             });
             var lead = [typeLabel(p), p.adresse].filter(Boolean).join(' · ');
             var town = [p.codePostal, p.ville].filter(Boolean).join(' ');
