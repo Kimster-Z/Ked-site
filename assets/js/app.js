@@ -251,7 +251,7 @@
     /* ---------- SVG ---------- */
 
     var svg = sv('svg', { viewBox: HOME.join(' '), role: 'group', 'aria-label': J.map_label, focusable: 'false' });
-    var img = sv('image', { href: ROOT + 'assets/img/carte-luxembourg.jpg', x: 0, y: 0, width: 2048, height: 2048, class: 'map-img', preserveAspectRatio: 'xMidYMid slice' });
+    var img = sv('image', { href: ROOT + 'assets/img/carte-luxembourg.webp', x: 0, y: 0, width: 2048, height: 2048, class: 'map-img', preserveAspectRatio: 'xMidYMid slice' });
     svg.appendChild(img);
 
     var gOutlines = sv('g', { 'aria-hidden': 'true' });
@@ -432,6 +432,23 @@
       if (e.target === svg || e.target === img) { if (state.canton) reset(); }
     });
 
+    /* mobile : pincer (rapprocher deux doigts) sur un canton zoomé ramène à la carte complète */
+    var pinch0 = 0;
+    function touchDist(t) {
+      var dx = t[0].clientX - t[1].clientX, dy = t[0].clientY - t[1].clientY;
+      return Math.sqrt(dx * dx + dy * dy);
+    }
+    mapEl.addEventListener('touchstart', function (e) {
+      pinch0 = e.touches.length === 2 ? touchDist(e.touches) : 0;
+    }, { passive: true });
+    mapEl.addEventListener('touchmove', function (e) {
+      if (!pinch0 || e.touches.length !== 2 || !state.canton) return;
+      if (touchDist(e.touches) / pinch0 < 0.8) { pinch0 = 0; hideTip(); reset(); }
+    }, { passive: true });
+    mapEl.addEventListener('touchend', function (e) {
+      if (e.touches.length < 2) pinch0 = 0;
+    }, { passive: true });
+
     /* ---------- horaires ---------- */
 
     var DAY_KEYS = ['lun', 'mar', 'mer', 'jeu', 'ven', 'sam', 'dim'];
@@ -589,6 +606,32 @@
           panel.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
         }
       }
+    }
+
+    /* liste complète des points de vente sous la carte : consultable sans
+       manipuler la carte, et lisible par les moteurs de recherche */
+    var allHost = document.getElementById('points-all');
+    if (allHost) {
+      cantons.filter(function (c) { return c.points.length; })
+        .sort(function (a, b) { return cantonName(a.id).localeCompare(cantonName(b.id), LANG); })
+        .forEach(function (c) {
+          var ul = el('ul');
+          c.points.slice().sort(function (a, b) { return a.nom.localeCompare(b.nom, LANG); }).forEach(function (p) {
+            var show = el('button', { type: 'button', class: 'pa-link' }, [J.show_on_map]);
+            show.addEventListener('click', function () {
+              selectPoint(p.id, true);
+              mapEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+            });
+            var lead = [typeLabel(p), p.adresse].filter(Boolean).join(' · ');
+            var town = [p.codePostal, p.ville].filter(Boolean).join(' ');
+            ul.appendChild(el('li', null, [
+              el('strong', { text: p.nom }),
+              el('span', { class: 'pa-meta' }, [lead + (town ? ', ' : ''), town ? el('span', { class: 'nowrap', text: town }) : null]),
+              el('span', { class: 'pa-actions' }, [el('a', { href: mapsUrl(p), target: '_blank', rel: 'noopener' }, [String(J.directions).replace(/\s*\(.*\)\s*$/, '')]), show])
+            ]));
+          });
+          allHost.appendChild(el('div', { class: 'pa-group' }, [el('h4', { text: cantonName(c.id) + ' (' + c.points.length + ')' }), ul]));
+        });
     }
 
     window.addEventListener('resize', sizePins);

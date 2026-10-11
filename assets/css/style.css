@@ -70,6 +70,7 @@ body {
 
 img, svg { display: block; max-width: 100%; }
 img { height: auto; }
+picture { display: block; }
 a { color: inherit; text-underline-offset: 0.25em; }
 ul { margin: 0; padding: 0; list-style: none; }
 h1, h2, h3, h4, p { margin: 0; }
@@ -635,6 +636,56 @@ noscript .notice { margin-top: 16px; }
   max-width: 70ch;
 }
 @media (max-width: 760px) { .event { grid-template-columns: 1fr; } }
+
+/* canton zoomé : le pincement est capté par la carte (retour à la vue complète) */
+.map.is-zoomed, .map.is-zoomed svg { touch-action: pan-y; }
+
+/* liste complète des points de vente */
+.all-points { margin-top: clamp(32px, 4vw, 56px); border-top: 1px solid var(--line); }
+.all-points > summary,
+.comp > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 0;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-2);
+}
+.all-points > summary::-webkit-details-marker,
+.comp > summary::-webkit-details-marker { display: none; }
+.all-points > summary::before,
+.comp > summary::before { content: "+"; font-size: 16px; line-height: 1; color: var(--fg); width: 12px; }
+.all-points[open] > summary::before,
+.comp[open] > summary::before { content: "–"; }
+.all-points > summary:hover, .comp > summary:hover { color: var(--fg); }
+.points-all { columns: 3 300px; column-gap: 48px; padding-bottom: 12px; }
+.pa-group { break-inside: avoid; margin-bottom: 28px; }
+.pa-group h4 { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--fg-3); margin: 0 0 10px; }
+.nowrap { white-space: nowrap; }
+.pa-group ul { display: grid; }
+.pa-group li { display: grid; gap: 2px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.pa-group li strong { font-weight: 700; }
+.pa-meta { color: var(--fg-3); font-size: 12px; }
+.pa-actions { display: flex; flex-wrap: wrap; gap: 4px 22px; margin-top: 4px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.pa-actions a, .pa-link { color: var(--fg-2); text-decoration: none; background: none; border: 0; padding: 4px 0; cursor: pointer; font: inherit; letter-spacing: inherit; text-transform: inherit; }
+.pa-actions a:hover, .pa-link:hover { color: var(--fg); }
+
+/* composition et valeurs nutritionnelles */
+.comp { width: 100%; margin-top: 6px; border-top: 1px solid var(--line); text-align: left; }
+.comp > summary { justify-content: center; padding: 14px 0; font-size: 10.5px; }
+.comp-body { display: grid; gap: 10px; padding: 4px 0 16px; font-size: 13px; color: var(--fg-2); }
+.comp-body h4 { margin: 6px 0 0; font-size: 10.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-3); }
+.comp-facts { color: var(--fg); font-weight: 700; font-size: 12.5px; }
+.nutri { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.nutri caption { text-align: left; padding: 6px 0; font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--fg-3); }
+.nutri th, .nutri td { padding: 7px 0; border-bottom: 1px solid var(--line); text-align: left; font-weight: 400; vertical-align: top; }
+.nutri td { text-align: right; color: var(--fg); font-variant-numeric: tabular-nums; white-space: nowrap; padding-left: 12px; }
+.comp-note { font-size: 11px; color: var(--fg-3); }
 
 /* ---------- frise partenaires ---------- */
 

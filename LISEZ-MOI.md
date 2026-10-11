@@ -42,6 +42,15 @@ powershell -ExecutionPolicy Bypass -File tools\build.ps1
 Le script réécrit les 6 pages (accueil et informations légales, × 3 langues), le `sitemap.xml` et les redirections.
 Ne modifiez pas directement les fichiers `index.html` : ils seraient écrasés à la prochaine génération.
 
+### Les photos
+
+Les photos principales existent en deux formats : JPEG (`hero-canettes.jpg`, `double-canette.jpg`) et WebP plus léger (`…-1000.webp`, `…-1600.webp`, `…-800.webp`, `…-1400.webp`), que les navigateurs récents utilisent en priorité. La carte utilise `carte-luxembourg.webp`.
+**Si vous remplacez une de ces photos, remplacez aussi ses versions WebP**, sinon l'ancienne image continuera de s'afficher. Le plus simple est de demander à Claude de régénérer ces fichiers.
+
+### Composition et valeurs nutritionnelles
+
+Elles sont dans `tools/i18n.json` (clés `orig_ingredients`, `zero_ingredients`, `nutri_rows`, dans chaque langue). Elles reprennent l'étiquette des canettes : à mettre à jour si l'étiquette change, puis relancer `tools/build.ps1`.
+
 ## Mise en ligne sur GitHub Pages
 
 1. Créez un compte sur github.com, puis un dépôt **public** (par exemple `ked-site`). GitHub Pages est gratuit pour les dépôts publics.
@@ -69,7 +78,6 @@ Les anciennes adresses Wix (`/boutique`, `/en/boutique`, `/informations-légales
 ## À vérifier avant la mise en ligne
 
 - [ ] Les textes luxembourgeois **nouveaux** ont été relus par un locuteur natif. Les textes déjà présents sur ked.lu ont été repris tels quels ; les nouveaux concernent les arguments, la carte, la frise et les libellés.
-- [ ] La licence de la police **Sequel 100 Black** autorise l'usage web. Sur un site, les fichiers de police sont publics et téléchargeables.
 - [ ] Les mentions légales mises à jour ont été validées. Points modifiés : hébergeur (GitHub au lieu de Wix), suppression des cookies Google Maps (la carte n'utilise plus Google, seuls les liens d'itinéraire ouvrent Google Maps), date de mise à jour. La version LB indiquait « A. Raulin » comme responsable de publication : elle a été alignée sur les versions FR et EN (Kimster Company).
 
 ## Organisation des fichiers

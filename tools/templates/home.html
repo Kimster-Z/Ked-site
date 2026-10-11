@@ -13,7 +13,10 @@
       </div>
     </div>
     <div class="hero-visual">
-      <img src="{{root}}assets/img/hero-canettes.jpg" alt="{{hero_alt}}" width="2000" height="1429" fetchpriority="high" decoding="async">
+      <picture>
+        <source type="image/webp" srcset="{{root}}assets/img/hero-canettes-1000.webp 1000w, {{root}}assets/img/hero-canettes-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 46vw">
+        <img src="{{root}}assets/img/hero-canettes.jpg" alt="{{hero_alt}}" width="2000" height="1429" fetchpriority="high" decoding="async">
+      </picture>
     </div>
   </div>
 </section>
@@ -26,16 +29,39 @@
       <p class="lead">{{product_text}}</p>
     </div>
     <figure class="product-visual reveal">
-      <img src="{{root}}assets/img/double-canette.jpg" alt="{{products_alt}}" width="2000" height="1342" loading="lazy" decoding="async">
+      <picture>
+        <source type="image/webp" srcset="{{root}}assets/img/double-canette-800.webp 800w, {{root}}assets/img/double-canette-1400.webp 1400w" sizes="(max-width: 760px) 82vw, 744px">
+        <img src="{{root}}assets/img/double-canette.jpg" alt="{{products_alt}}" width="2000" height="1342" loading="lazy" decoding="async">
+      </picture>
     </figure>
     <div class="product-lines">
       <article class="product-line reveal">
         <h3>{{original_name}}</h3>
         <p>{{original_text}}</p>
+        <details class="comp">
+          <summary>{{comp_summary}}</summary>
+          <div class="comp-body">
+            <p class="comp-facts">{{facts}}</p>
+            <h4>{{ingredients_label}}</h4>
+            <p>{{orig_ingredients}}</p>
+            {{nutri_original}}
+            <p class="comp-note">{{nutri_note}}</p>
+          </div>
+        </details>
       </article>
       <article class="product-line reveal">
         <h3>{{zero_name}}</h3>
         <p>{{zero_text}}</p>
+        <details class="comp">
+          <summary>{{comp_summary}}</summary>
+          <div class="comp-body">
+            <p class="comp-facts">{{facts}}</p>
+            <h4>{{ingredients_label}}</h4>
+            <p>{{zero_ingredients}}</p>
+            {{nutri_zero}}
+            <p class="comp-note">{{nutri_note}}</p>
+          </div>
+        </details>
       </article>
     </div>
   </div>
@@ -83,6 +109,10 @@
       <div class="map" id="map"></div>
       <div class="panel" id="locator-panel" aria-live="polite"></div>
     </div>
+    <details class="all-points">
+      <summary>{{points_all}}</summary>
+      <div class="points-all" id="points-all"></div>
+    </details>
     <noscript><p class="notice">{{map_noscript}}</p></noscript>
   </div>
 </section>

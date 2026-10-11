@@ -127,9 +127,18 @@ function Build-Legal($lang, $L) {
   return $sb.ToString().TrimEnd()
 }
 
+# -------------------------------------------------------------- tableau nutritionnel
+function Nutri($rows, $col, $caption) {
+  $sb = New-Object System.Text.StringBuilder
+  [void]$sb.Append("<table class=`"nutri`"><caption>$(Esc $caption)</caption><tbody>")
+  foreach ($r in @($rows)) { [void]$sb.Append("<tr><th scope=`"row`">$(Esc $r[0])</th><td>$(Esc $r[$col])</td></tr>") }
+  [void]$sb.Append('</tbody></table>')
+  return $sb.ToString()
+}
+
 # -------------------------------------------------------------- pages
 $jsonld = @'
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"KED","legalName":"Kimster Company S.à r.l.-S","url":"https://www.ked.lu/","logo":"https://www.ked.lu/assets/img/logo-ked.png","email":"contact@ked.lu","address":{"@type":"PostalAddress","streetAddress":"14 rue de la Chapelle","postalCode":"L-8017","addressLocality":"Strassen","addressCountry":"LU"},"sameAs":["https://www.instagram.com/ked_energy/","https://www.tiktok.com/@ked.energy"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"KED","legalName":"Kimster Company S.\u00e0 r.l.-S","url":"https://www.ked.lu/","logo":"https://www.ked.lu/assets/img/logo-ked.png","email":"contact@ked.lu","address":{"@type":"PostalAddress","streetAddress":"14 rue de la Chapelle","postalCode":"L-8017","addressLocality":"Strassen","addressCountry":"LU"},"sameAs":["https://www.instagram.com/ked_energy/","https://www.tiktok.com/@ked.energy"]}</script>
 '@
 
 foreach ($lang in $LANGS) {
@@ -155,6 +164,9 @@ foreach ($lang in $LANGS) {
       [void]$ll.AppendLine("        <a href=`"$root$(LangPath $l2)$(PagePath $page)`" hreflang=`"$l2`" lang=`"$l2`"$cur>$($l2.ToUpper())</a>")
     }
     $map['lang_links'] = $ll.ToString().TrimEnd()
+
+    $map['nutri_original'] = Nutri $L.nutri_rows 1 $L.per100
+    $map['nutri_zero'] = Nutri $L.nutri_rows 2 $L.per100
 
     if ($page -eq 'home') {
       $map['page_title'] = Esc $L.title
@@ -194,6 +206,12 @@ Redirect 'lb\boutique\index.html' '../'
 Redirect "$accent\index.html" '../informations-legales/'
 Redirect "en\$accent\index.html" '../informations-legales/'
 Redirect "lb\$accent\index.html" '../informations-legales/'
+# anciennes fiches produits et categorie de la boutique Wix
+$slugs = @('pack-24-canettes-ked-mixte', 'copie-de-pack-24-canettes-ked-original', 'copie-de-pack-24-canettes-ked-zero')
+foreach ($pre in @('', 'en\', 'lb\')) {
+  foreach ($s in $slugs) { Redirect "${pre}product-page\$s\index.html" '../../#produit' }
+  Redirect "${pre}category\all-products\index.html" '../../'
+}
 
 # -------------------------------------------------------------- sitemap, robots, 404
 $sm = New-Object System.Text.StringBuilder
