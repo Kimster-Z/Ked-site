@@ -36,6 +36,8 @@ $i18n = (Read-Utf8 "$tools\i18n.json") | ConvertFrom-Json
 $T = @{}
 foreach ($n in 'layout', 'header', 'footer', 'home', 'legal') { $T[$n] = Read-Utf8 "$tools\templates\$n.html" }
 
+# libelle affiche dans le selecteur de langue (le code technique reste "lb", code ISO du luxembourgeois)
+function LangLabel($l) { if ($l -eq 'lb') { return 'LU' } else { return $l.ToUpper() } }
 function LangPath($l) { if ($l -eq 'fr') { return '' } else { return "$l/" } }
 function PagePath($page) { if ($page -eq 'legal') { return 'informations-legales/' } else { return '' } }
 function RootFor($l, $page) {
@@ -152,7 +154,7 @@ foreach ($lang in $LANGS) {
     $ll = New-Object System.Text.StringBuilder
     foreach ($l2 in $LANGS) {
       $cur = if ($l2 -eq $lang) { ' aria-current="true"' } else { '' }
-      [void]$ll.AppendLine("        <a href=`"$root$(LangPath $l2)$(PagePath $page)`" hreflang=`"$l2`" lang=`"$l2`"$cur>$($l2.ToUpper())</a>")
+      [void]$ll.AppendLine("        <a href=`"$root$(LangPath $l2)$(PagePath $page)`" hreflang=`"$l2`" lang=`"$l2`"$cur>$(LangLabel $l2)</a>")
     }
     $map['lang_links'] = $ll.ToString().TrimEnd()
 
@@ -234,7 +236,7 @@ $nf = @'
   <h1>404</h1>
   <div class="legal-body">
     <p>Page introuvable &middot; Page not found &middot; S&auml;it net fonnt</p>
-    <p><a class="btn btn--primary" href="/">FR</a> <a class="btn" href="/en/">EN</a> <a class="btn" href="/lb/">LB</a></p>
+    <p><a class="btn btn--primary" href="/">FR</a> <a class="btn" href="/en/">EN</a> <a class="btn" href="/lb/">LU</a></p>
   </div>
 </div></main>
 </body>
