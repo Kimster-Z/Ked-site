@@ -36,6 +36,18 @@ $i18n = (Read-Utf8 "$tools\i18n.json") | ConvertFrom-Json
 $T = @{}
 foreach ($n in 'layout', 'header', 'footer', 'home', 'legal') { $T[$n] = Read-Utf8 "$tools\templates\$n.html" }
 
+# version d'un fichier (empreinte de son contenu) : ajoutee a son adresse pour que
+# les navigateurs telechargent la nouvelle version des qu'il change (anti-cache)
+$verCache = @{}
+function Ver($rel) {
+  if (-not $verCache.ContainsKey($rel)) {
+    $md5 = [System.Security.Cryptography.MD5]::Create()
+    $bytes = [System.IO.File]::ReadAllBytes((Join-Path $site $rel))
+    $verCache[$rel] = ([System.BitConverter]::ToString($md5.ComputeHash($bytes)) -replace '-', '').Substring(0, 10).ToLower()
+  }
+  return $verCache[$rel]
+}
+
 # libelle affiche dans le selecteur de langue (le code technique reste "lb", code ISO du luxembourgeois)
 function LangLabel($l) { if ($l -eq 'lb') { return 'LU' } else { return $l.ToUpper() } }
 function LangPath($l) { if ($l -eq 'fr') { return '' } else { return "$l/" } }
@@ -142,6 +154,7 @@ foreach ($lang in $LANGS) {
     foreach ($p in $L.PSObject.Properties) { if ($p.Value -is [string]) { $map[$p.Name] = Esc $p.Value } }
 
     $map['root'] = $root
+    $map['css_ver'] = Ver 'assets\css\style.css'
     $map['home'] = if ($page -eq 'home') { '' } else { '../' }
     $map['legal_href'] = $root + (LangPath $lang) + 'informations-legales/'
     $map['canonical'] = $BASE + (LangPath $lang) + (PagePath $page)
@@ -164,7 +177,7 @@ foreach ($lang in $LANGS) {
       $map['jsonld'] = $jsonld.Trim()
       $cfg = [ordered]@{ lang = $lang; root = $root; partners_pause = $L.partners_pause; partners_play = $L.partners_play; js = $L.js }
       $cfgJson = ($cfg | ConvertTo-Json -Depth 8 -Compress)
-      $map['scripts'] = "<script>window.KED_I18N = $cfgJson;</script>`n<script src=`"${root}data/points-de-vente.js`"></script>`n<script src=`"${root}assets/js/cantons.js`"></script>`n<script src=`"${root}assets/js/app.js`"></script>"
+      $map['scripts'] = "<script>window.KED_I18N = $cfgJson;</script>`n<script src=`"${root}data/points-de-vente.js?v=$(Ver 'data\points-de-vente.js')`"></script>`n<script src=`"${root}assets/js/cantons.js?v=$(Ver 'assets\js\cantons.js')`"></script>`n<script src=`"${root}assets/js/app.js?v=$(Ver 'assets\js\app.js')`"></script>"
       $map['content'] = Fill $T.home $map
     } else {
       $map['page_title'] = Esc $L.legal_meta_title

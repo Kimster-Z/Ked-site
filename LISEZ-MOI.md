@@ -19,6 +19,8 @@ C'est le seul fichier à toucher pour la carte. Ouvrez-le avec le Bloc-notes ou 
 - Les horaires communs (boutiques Munhowen) sont définis une seule fois en haut de la liste (`MUNHOWEN_A`, `MUNHOWEN_B`…).
 - Le champ `note` affiche une précision sur la fiche (ex. « Réservé aux étudiants »).
 
+> **Après chaque modification de ce fichier (ou des styles et scripts)**, relancez `tools/build.ps1` avant de publier. Le script met à jour le numéro de version des fichiers, ce qui force les navigateurs à télécharger la nouvelle version. Sans cette étape, certains visiteurs continueront de voir l'ancienne version pendant un moment.
+
 ### Les événements → même fichier, section `KED_EVENEMENTS`
 
 - Pour **ajouter un événement**, renseignez la date (`AAAA-MM-JJ`), l'heure, le titre, le lieu et la ville. Vous pouvez aussi ajouter une photo, à déposer dans `assets/img/evenements/` (format paysage conseillé).
