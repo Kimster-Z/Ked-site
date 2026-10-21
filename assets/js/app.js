@@ -500,6 +500,7 @@
     function hoursLabel(str) {
       var r = ranges(str);
       if (!r.length) return J.closed;
+      if (r.length === 1 && r[0][0] === 0 && r[0][1] === 1440 && J.allday) return J.allday;
       return String(str).split('/').map(function (s) { return s.trim().replace('-', ' – '); }).join(' · ');
     }
 

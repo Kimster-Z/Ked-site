@@ -35,7 +35,11 @@ window.KED_PARTENAIRES = [
   { nom: "Munhowen",      logo: "assets/img/partenaires/munhowen.png" },
   { nom: "Pizza Lux Foodtruck", logo: "assets/img/partenaires/pizzalux.png" },
   { nom: "SAUL",          logo: "assets/img/partenaires/saul.png" },
-  { nom: "Yucca Fitness Club", logo: "assets/img/partenaires/yucca.png" }
+  { nom: "Yucca Fitness Club", logo: "assets/img/partenaires/yucca.png" },
+  { nom: "TotalEnergies",      logo: "assets/img/partenaires/totalenergies.png" },
+  { nom: "Aral",               logo: "assets/img/partenaires/aral.png" },
+  { nom: "BP",                 logo: "assets/img/partenaires/bp.png" },
+  { nom: "Gulf",               logo: "assets/img/partenaires/gulf.png" }
 ];
 
 /* ----------------------------------------------------------------------------
@@ -188,5 +192,46 @@ window.KED_POINTS = [
     id: "munhowen-steinfort", nom: "Munhowen — Steinfort", type: "boissons",
     adresse: "26 Route d'Arlon", codePostal: "L-8410", ville: "Steinfort", canton: "capellen",
     lat: 49.6591348, lng: 5.9106271, horaires: MUNHOWEN_C
+  },
+
+  /* ---- Stations-service partenaires ---- */
+  {
+    id: "total-contern", nom: "TotalEnergies — Contern", type: "station",
+    adresse: "4 Rue Daniel Grün", codePostal: "L-5315", ville: "Contern", canton: "luxembourg",
+    lat: 49.5953722, lng: 6.2134424
+  },
+  {
+    id: "total-howald", nom: "TotalEnergies — Howald", type: "station",
+    adresse: "Rangwee", codePostal: "L-2723", ville: "Howald", canton: "luxembourg",
+    lat: 49.5878643, lng: 6.1379462,
+    itineraire: "https://www.google.com/maps/dir/?api=1&destination=49.5878643%2C6.1379462",
+    horaires: { lun: "06:00-22:00", mar: "06:00-22:00", mer: "06:00-22:00", jeu: "06:00-22:00", ven: "06:00-22:00", sam: "07:00-20:00", dim: "ferme" }
+  },
+  {
+    id: "aral-dudelange", nom: "Aral — Dudelange", type: "station",
+    adresse: "106 Route de Luxembourg", codePostal: "L-3515", ville: "Dudelange", canton: "esch-sur-alzette",
+    lat: 49.4900107, lng: 6.0833972,
+    horaires: { lun: "06:00-22:00", mar: "06:00-22:00", mer: "06:00-22:00", jeu: "06:00-22:00", ven: "06:00-22:00", sam: "06:00-22:00", dim: "06:00-22:00" }
+  },
+  {
+    id: "aral-friedhaff", nom: "Aral — Friedhaff", type: "station",
+    adresse: "Pack Up Friedhaff, N27A", codePostal: "L-9379", ville: "Diekirch", canton: "diekirch",
+    lat: 49.8846098, lng: 6.1361673,
+    itineraire: "https://www.google.com/maps/dir/?api=1&destination=49.8846098%2C6.1361673"
+  },
+  {
+    id: "bp-capellen", nom: "BP — Aire de Capellen", type: "station",
+    note: { fr: "Aire d’autoroute A6, sens Belgique → Luxembourg.", en: "A6 motorway rest area, direction Belgium → Luxembourg.", lb: "Raschtplaz op der A6, Richtung Belsch → Lëtzebuerg." },
+    adresse: "Aire de Capellen (A6)", codePostal: "L-8345", ville: "Holzem", canton: "capellen",
+    lat: 49.6354035, lng: 5.9702452,
+    itineraire: "https://www.google.com/maps/dir/?api=1&destination=49.6354035%2C5.9702452",
+    horaires: { lun: "00:00-24:00", mar: "00:00-24:00", mer: "00:00-24:00", jeu: "00:00-24:00", ven: "00:00-24:00", sam: "00:00-24:00", dim: "00:00-24:00" }
+  },
+  {
+    id: "gulf-mertzig", nom: "Gulf — Mertzig", type: "station",
+    adresse: "Rue Principale", codePostal: "L-9166", ville: "Mertzig", canton: "diekirch",
+    lat: 49.8376918, lng: 6.0133133,
+    itineraire: "https://www.google.com/maps/dir/?api=1&destination=49.8376918%2C6.0133133",
+    horaires: { lun: "06:00-22:00", mar: "06:00-22:00", mer: "06:00-22:00", jeu: "06:00-22:00", ven: "06:00-22:00", sam: "07:00-22:00", dim: "08:00-13:00" }
   }
 ];
