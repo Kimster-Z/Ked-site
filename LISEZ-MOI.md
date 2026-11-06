@@ -16,7 +16,7 @@ C'est le seul fichier à toucher pour la carte. Ouvrez-le avec le Bloc-notes ou 
 - Pour **ajouter un point de vente**, copiez un bloc `{ ... }` et remplissez les champs.
 - Pour obtenir les **coordonnées GPS**, faites un clic droit sur le lieu dans Google Maps, puis cliquez sur les deux nombres affichés en haut du menu : ils sont copiés.
 - Le **canton** est facultatif : sans lui, il est calculé à partir des coordonnées. Indiquez-le pour les communes proches d'une frontière de canton ; le point est alors automatiquement placé à l'intérieur du bon canton sur la carte.
-- Les horaires communs (boutiques Munhowen) sont définis une seule fois en haut de la liste (`MUNHOWEN_A`, `MUNHOWEN_B`…).
+- Les horaires communs (boutiques Munhowen, supermarchés Cactus) sont définis une seule fois en haut de la liste (`MUNHOWEN_A`, `CACTUS_A`…). Les horaires Cactus ont été relevés sur cactus.lu le 6 novembre 2026 : à revérifier de temps en temps, notamment autour des jours fériés.
 - Le champ `note` affiche une précision sur la fiche (ex. « Réservé aux étudiants »).
 
 > **Après chaque modification de ce fichier (ou des styles et scripts)**, relancez `tools/build.ps1` avant de publier. Le script met à jour le numéro de version des fichiers, ce qui force les navigateurs à télécharger la nouvelle version. Sans cette étape, certains visiteurs continueront de voir l'ancienne version pendant un moment.
