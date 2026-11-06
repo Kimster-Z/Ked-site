@@ -39,7 +39,8 @@ window.KED_PARTENAIRES = [
   { nom: "TotalEnergies",      logo: "assets/img/partenaires/totalenergies.png" },
   { nom: "Aral",               logo: "assets/img/partenaires/aral.png" },
   { nom: "BP",                 logo: "assets/img/partenaires/bp.png" },
-  { nom: "Gulf",               logo: "assets/img/partenaires/gulf.png" }
+  { nom: "Gulf",               logo: "assets/img/partenaires/gulf.png" },
+  { nom: "Cactus",             logo: "assets/img/partenaires/cactus.png" }
 ];
 
 /* ----------------------------------------------------------------------------
@@ -82,7 +83,14 @@ var MUNHOWEN_D = { lun: "09:30-13:30 / 14:00-18:00", mar: "09:30-13:30 / 14:00-1
 var MUNHOWEN_E = { lun: "09:00-18:00", mar: "09:00-18:00", mer: "09:00-18:00", jeu: "09:00-18:00", ven: "09:00-18:00", sam: "09:00-18:00", dim: "ferme" };
 var MUNHOWEN_F = { lun: "08:30-19:00", mar: "08:30-19:00", mer: "08:30-19:00", jeu: "08:30-19:00", ven: "08:30-19:00", sam: "08:30-19:00", dim: "ferme" };
 
-var NOTE_FOODTRUCK = { fr: "Foodtruck : présent à cet endroit uniquement aux horaires indiqués.", en: "Food truck: at this spot only during the hours shown.", lb: "Foodtruck: just zu den uginnen Zäiten op dëser Plaz." };
+/* Horaires des supermarchés Cactus (relevés sur cactus.lu le 6 novembre 2026) */
+var CACTUS_A = { lun: "08:00-20:00", mar: "08:00-20:00", mer: "08:00-20:00", jeu: "08:00-20:00", ven: "08:00-21:00", sam: "08:00-20:00", dim: "08:00-13:00" };
+var CACTUS_B = { lun: "08:00-20:00", mar: "08:00-20:00", mer: "08:00-20:00", jeu: "08:00-20:00", ven: "08:00-20:00", sam: "08:00-19:00", dim: "08:00-13:00" };
+var CACTUS_BELLE_ETOILE = { lun: "08:00-20:00", mar: "08:00-20:00", mer: "08:00-20:00", jeu: "08:00-20:00", ven: "08:00-21:00", sam: "08:00-20:00", dim: "ferme" };
+var CACTUS_INGELDORF = { lun: "08:00-20:00", mar: "08:00-20:00", mer: "08:00-20:00", jeu: "08:00-20:00", ven: "08:00-21:00", sam: "08:00-19:00", dim: "08:00-13:00" };
+var CACTUS_MARNACH = { lun: "08:00-19:30", mar: "08:00-19:30", mer: "08:00-19:30", jeu: "08:00-19:30", ven: "08:00-19:30", sam: "08:00-19:30", dim: "08:00-13:00" };
+
+var NOTE_FOODTRUCK ={ fr: "Foodtruck : présent à cet endroit uniquement aux horaires indiqués.", en: "Food truck: at this spot only during the hours shown.", lb: "Foodtruck: just zu den uginnen Zäiten op dëser Plaz." };
 var NOTE_ETUDIANTS = { fr: "Réservé aux étudiants.", en: "Students only.", lb: "Reservéiert fir Studenten." };
 
 window.KED_POINTS = [
@@ -233,5 +241,23 @@ window.KED_POINTS = [
     lat: 49.8376918, lng: 6.0133133,
     itineraire: "https://www.google.com/maps/dir/?api=1&destination=49.8376918%2C6.0133133",
     horaires: { lun: "06:00-22:00", mar: "06:00-22:00", mer: "06:00-22:00", jeu: "06:00-22:00", ven: "06:00-22:00", sam: "07:00-22:00", dim: "08:00-13:00" }
-  }
+  },
+
+  /* ---- Supermarchés Cactus (magasins classiques, hors Cactus Marché, hobbi et shoppi) ---- */
+  { id: "cactus-bascharage", nom: "Cactus — Bascharage", type: "supermarche", adresse: "6 Avenue de Luxembourg", codePostal: "L-4950", ville: "Bascharage", canton: "capellen", lat: 49.5607192, lng: 5.9002674, horaires: CACTUS_A },
+  { id: "cactus-belle-etoile", nom: "Cactus — Belle Étoile", type: "supermarche", adresse: "Centre commercial Belle Étoile, Route d'Arlon", codePostal: "L-8050", ville: "Bertrange", canton: "luxembourg", lat: 49.6235651, lng: 6.0508795, horaires: CACTUS_BELLE_ETOILE },
+  { id: "cactus-bereldange", nom: "Cactus — Bereldange", type: "supermarche", adresse: "200 Route de Luxembourg", codePostal: "L-7241", ville: "Bereldange", canton: "luxembourg", lat: 49.6503855, lng: 6.1262301, horaires: CACTUS_B },
+  { id: "cactus-bettembourg", nom: "Cactus — Bettembourg", type: "supermarche", adresse: "320 ZAE Wolser A", codePostal: "L-3225", ville: "Bettembourg", canton: "esch-sur-alzette", lat: 49.5124184, lng: 6.0940762, horaires: CACTUS_A },
+  { id: "cactus-echternach", nom: "Cactus — Echternach", type: "supermarche", adresse: "47 Rue des Remparts", codePostal: "L-6477", ville: "Echternach", canton: "echternach", lat: 49.8097047, lng: 6.4181805, horaires: CACTUS_B },
+  { id: "cactus-esch-lallange", nom: "Cactus — Esch-Lallange", type: "supermarche", adresse: "2-16 Rue de Mondercange", codePostal: "L-4247", ville: "Esch-sur-Alzette", canton: "esch-sur-alzette", lat: 49.5083955, lng: 5.9880467, horaires: CACTUS_A },
+  { id: "cactus-howald", nom: "Cactus — Howald", type: "supermarche", adresse: "40 Rue des Scillas", codePostal: "L-2529", ville: "Howald", canton: "luxembourg", lat: 49.578857, lng: 6.132465, horaires: CACTUS_A },
+  { id: "cactus-ingeldorf", nom: "Cactus — Ingeldorf", type: "supermarche", adresse: "4 Route d'Ettelbruck", codePostal: "L-9160", ville: "Ingeldorf", canton: "diekirch", lat: 49.8503563, lng: 6.1276941, horaires: CACTUS_INGELDORF },
+  { id: "cactus-kayl", nom: "Cactus — Kayl", type: "supermarche", adresse: "149 Rue Principale", codePostal: "L-3770", ville: "Tétange", canton: "esch-sur-alzette", lat: 49.4802029, lng: 6.041618, horaires: CACTUS_B },
+  { id: "cactus-marnach", nom: "Cactus — Marnach", type: "supermarche", adresse: "2 Marbuergerstrooss", codePostal: "L-9764", ville: "Marnach", canton: "clervaux", lat: 50.0500308, lng: 6.071996, horaires: CACTUS_MARNACH },
+  { id: "cactus-mersch", nom: "Cactus — Mersch", type: "supermarche", adresse: "2 Rue Lohr", codePostal: "L-7545", ville: "Mersch", canton: "mersch", lat: 49.7487227, lng: 6.1135255, horaires: CACTUS_B },
+  { id: "cactus-petange", nom: "Cactus — Pétange", type: "supermarche", adresse: "1 Rue Pierre Grégoire", codePostal: "L-4702", ville: "Pétange", canton: "esch-sur-alzette", lat: 49.5557708, lng: 5.8674456, horaires: CACTUS_B },
+  { id: "cactus-redange", nom: "Cactus — Redange", type: "supermarche", adresse: "37 Rue de la Piscine", codePostal: "L-8508", ville: "Redange-sur-Attert", canton: "redange", lat: 49.7717674, lng: 5.8970484, horaires: CACTUS_B },
+  { id: "cactus-remich", nom: "Cactus — Remich", type: "supermarche", adresse: "26 Route de l'Europe", codePostal: "L-5531", ville: "Remich", canton: "remich", lat: 49.5481772, lng: 6.360759, horaires: CACTUS_B },
+  { id: "cactus-roodt-sur-syre", nom: "Cactus — Roodt-sur-Syre", type: "supermarche", adresse: "18 Rue Strachen", codePostal: "L-6933", ville: "Mensdorf", canton: "grevenmacher", lat: 49.6586133, lng: 6.2908064, horaires: CACTUS_B },
+  { id: "cactus-windhof", nom: "Cactus — Windhof", type: "supermarche", adresse: "1 Route d'Arlon", codePostal: "L-8399", ville: "Windhof (Koerich)", canton: "capellen", lat: 49.6459414, lng: 5.9578513, horaires: CACTUS_B }
 ];
